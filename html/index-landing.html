@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Lightning - Multipurpose HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/revolution.css" media="screen"/>
+<link rel="stylesheet" href="css/media-slideshow.css" media="screen"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic,700italic"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rationale"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/jquery.li-scroller.1.0.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.donutchart.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/accordion-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script src="js/jquery.retina.js"></script>
+<script>
+$(document).ready(function() {
+//Retina Image
+$('img.retina').retina('@2x');
+
+//Slideshow
+$('.banner-landing').revolution({
+delay:9000,
+startwidth:1040,
+startheight:463,
+onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
+thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+thumbHeight:50,
+thumbAmount:3,
+hideThumbs:0,
+navigationType:"bullet",				// bullet, thumb, none
+navigationArrows:"none",				// nexttobullets, solo (old name verticalcentered), none
+navigationStyle:"round-old",			// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+navigationHAlign:"center",				// Vertical Align top,center,bottom
+navigationVAlign:"bottom",				// Horizontal Align left,center,right
+navigationHOffset:0,
+navigationVOffset:35,
+touchenabled:"on",						// Enable Swipe Function : on/off
+stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+fullWidth:"on",
+shadow:0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+})
+
+});
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+	<div id="box-wrapper">
+        <!-- header start here -->
+        <header>
+                
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column top-desc">
+                    	<ul class="social-button">
+                        	<li>
+                            	<iframe id="facebookIframe" src="http://www.facebook.com/plugins/like.php?href=http://www.indonez.com/&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21"></iframe>
+                            </li>
+                            <li>
+                            	<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com" data-via="indoneztheme" data-lang="en">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                            </li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->
+            
+            <div class="row">
+                <div class="twelve column">
+                
+                    <div id="left-header">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="main-logo" class="retina"/></a>
+                        </div>           
+                        <!-- logo end here -->
+                    </div>
+                    
+                    <div id="right-header">
+                        <div id="mainmenu-wrapper">
+                            <div class="left-menu">
+                                    
+                                <!-- navigation start here -->
+                                <nav id="mainmenu">
+                                    <ul id="menu">
+                                        <li class="dropdown selected"><a href="index.html">Home</a>
+                                            <ul> 
+                                                <li><a href="index-magazine.html">home magazine</a></li>
+                                                <li><a href="index-portfolio.html">home portfolio</a></li>
+                                                <li class="selected"><a href="index-landing.html">home landing</a></li>
+                                                <li><a href="index-blog.html">home bloging</a></li>
+                                                <li><a href="index-store.html">home store</a></li>
+                                            </ul>
+                                        </li>                              
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Testimonials</a></li>                                        
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- navigation end here --> 
+                                    
+                            </div>
+                            
+                            <div class="right-menu" id="top-search">
+                                <a class="trigger" href="#"><i class="icon-search"></i></a>
+                                <div class="search-panel">
+                                    <ul>
+                                        <li>
+                                        <form id="search" action="#" method="get">
+                                            <fieldset class="search-fieldset">
+                                                <input type="text" id="search-form" value="type and hit enter" onblur="if (this.value == ''){this.value = 'type and hit enter'; }" onfocus="if (this.value == 'type and hit enter') {this.value = ''; }" />
+                                            </fieldset>      						
+                                        </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                     
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>    
+                    
+        </header>
+        <!-- header end here -->
+        
+        <!-- slideshow start here -->
+        <section id="slideshow-container-landing">
+            <div class="banner-landing">            
+                
+                <ul>      
+                    <!-- slide 1 -->
+                    <li data-transition="fade">
+                        <img src="images/slideshow/sld_landing.jpg" alt="">
+                        <div class="caption lfb landing-media2" data-x="515" data-y="7" data-speed="1200" data-start="400" data-easing="easeOutExpo"><img src="images/slideshow/sld_obj2.png" alt=""></div>
+                        
+                        <div class="caption general_caption lfb ltb landing-media1 landing-media3"  data-x="5" data-y="175" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                        	<h1 class="smallmargin-bottom white-color">This is all what you need</h1>
+                            <p class="lead white-color">Get ready to see something awesome</p>
+                        </div>                        
+                        <div class="caption general_caption lfb ltb landing-media1 landing-media4"  data-x="5" data-y="270" data-speed="1400" data-start="550" data-easing="easeOutExpo">
+                        	<div class="slide-separator"></div>
+                        </div>
+                        <div class="caption general_caption lfb ltb landing-media1"  data-x="5" data-y="290" data-speed="900" data-start="800" data-easing="easeOutExpo">
+                            <p class="white-color">Excepteur sinta occaecat cupidatat none proident sunt in culpa qui officia<br/>deserunt mollit anim id numquam eius modi tempora incidunt labore</p>
+                        </div>
+                        <div class="caption general_caption lfb ltb landing-media1 landing-media5"  data-x="5" data-y="355" data-speed="800" data-start="1000" data-easing="easeOutExpo">
+                            <ul class="no-bullet app-market">
+                            	<li><img src="images/slideshow/apple.png" alt=""/></li>
+                                <li><img src="images/slideshow/android.png" alt=""/></li>
+                                <li><img src="images/slideshow/windows.png" alt=""/></li>
+                            </ul>
+                        </div>
+                    </li>              
+                </ul>
+                <div class="tp-bannertimer tp-top"></div>
+                    
+            </div>   	
+        </section>
+        <!-- slideshow end here -->
+        
+        <!-- featured column section start here -->
+        <section class="featured-column bg-border2">
+            <div class="row">
+                <div class="twelve column text-center margin-bottom2">
+                	<h2 class="margin-top"><span class="highlight">A Beautiful &amp; Simple to use</span></h2>
+                    <h2 class="inherit">Lightning landing page</h2>
+                    
+                    <p class="sixty-percent margin-bottom2">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim minim veniam, nostrud exercitation ullamco laboris aliquip commodo consequat.</p>
+                    <div class="slide-separator center-position"></div>
+                </div>
+                
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-headphonesalt"></i>
+                    </div>
+                    <h4 class="inherit">Icon Headphonesalt</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>            
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-filmstrip"></i>
+                    </div>
+                    <h4 class="inherit">Icon Filmstrip</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>            
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-crown"></i>
+                    </div>
+                    <h4 class="inherit">Icon Crown</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>            
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-fire"></i>
+                    </div>
+                    <h4 class="inherit">Icon Fire</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>            
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-paperclip"></i>
+                    </div>
+                    <h4 class="inherit">Icon Paperclip</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>            
+                <div class="four column mobile-two">
+                    <div class="circle-border small icon-left">
+                        <i class="icon-police"></i>
+                    </div>
+                    <h4 class="inherit">Icon Police</h4>
+                    <p class="text-overflow">Reprehenderit etero quine voluptate velitesse quami nihil molestiae dolorem eum fugiat repellat porro quisquam</p>
+                </div>
+            </div>
+        </section>
+        <!-- featured column section end here -->  
+          
+        <!-- content section start here -->
+        <section class="content-wrapper">    	
+            <div class="row">
+            	<div class="twelve column">
+                	<h2 class="text-center">Get the best features to get your goal!</h2>
+                    <p class="sixty-percent text-center">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi occaecati cupiditate providen</p>
+                    
+                    <ul class="tabs-round margin-top2">
+                        <li><a href="#tab-sample1">Overview</a></li>
+                        <li><a href="#tab-sample2">All Features</a></li>
+                        <li><a href="#tab-sample3">Keep in Touch</a></li>                 
+                    </ul>
+                    <div class="tab_container-round">
+                        <div id="tab-sample1" class="tab_content-round"> 
+                        	<img src="images/sample_images/img_sample2.png" alt="" class="img-left tablet-align"/>
+                            <h3 class="margin-top">Get to the right place every time</h3>
+                            <div class="slide-separator text-overflow"></div>                        
+                            <p class="smallmargin-top2">Lorem ipsum dolor amet consectetur adipite scinelit vestibulum velquam sitareme odiology ultricies dapbus acer vitae augue duis nulla nuncerom dignissim ullamcorper minima</p>
+                            <ul class="star text-overflow">
+                                <li>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae</li>                    
+                                <li>Molestias excepturi sint occaecati cupiditate non provident</li>
+                                <li>Temporibus autem quibusdam et aut officiis debitis aut rerum</li>
+                            </ul>
+                            <a href="#" class="button medium orange"><i class="icon-search"></i> Live Demo</a>
+                            <a href="#" class="button medium grey"><i class="icon-emptycart"></i> Buy Now</a>                                  
+                        </div>
+                                                            
+                        <div id="tab-sample2" class="tab_content-round">                            
+                            <img src="images/sample_images/img_sample2.png" alt="" class="img-left tablet-align"/>
+                            <h3 class="margin-top">Get to the right place every time</h3>
+                            <div class="slide-separator text-overflow"></div>                        
+                            <p class="smallmargin-top2">Lorem ipsum dolor amet consectetur adipite scinelit vestibulum velquam sitareme odiology ultricies dapbus acer vitae augue duis nulla nuncerom dignissim ullamcorper minima</p>
+                            <ul class="star text-overflow">
+                                <li>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae</li>                    
+                                <li>Molestias excepturi sint occaecati cupiditate non provident</li>
+                                <li>Temporibus autem quibusdam et aut officiis debitis aut rerum</li>
+                            </ul>
+                            <a href="#" class="button medium orange"><i class="icon-search"></i> Live Demo</a>
+                            <a href="#" class="button medium grey"><i class="icon-emptycart"></i> Buy Now</a>                                       
+                        </div>
+                                                            
+                        <div id="tab-sample3" class="tab_content-round">                            
+                            <img src="images/sample_images/img_sample2.png" alt="" class="img-left tablet-align"/>
+                            <h3 class="margin-top">Get to the right place every time</h3>
+                            <div class="slide-separator text-overflow"></div>                        
+                            <p class="smallmargin-top2">Lorem ipsum dolor amet consectetur adipite scinelit vestibulum velquam sitareme odiology ultricies dapbus acer vitae augue duis nulla nuncerom dignissim ullamcorper minima</p>
+                            <ul class="star text-overflow">
+                                <li>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae</li>                    
+                                <li>Molestias excepturi sint occaecati cupiditate non provident</li>
+                                <li>Temporibus autem quibusdam et aut officiis debitis aut rerum</li>
+                            </ul>
+                            <a href="#" class="button medium orange"><i class="icon-search"></i> Live Demo</a>
+                            <a href="#" class="button medium grey"><i class="icon-emptycart"></i> Buy Now</a>                                     
+                        </div>                                                                  
+                    </div>
+                </div>
+            </div>            	                 
+        </section>
+        <!-- content section end here -->
+        
+        <!-- featured column section start here -->
+        <section class="featured-column parallax2">
+        	<div class="parallax_overlay"></div>
+            <div class="row">
+                <div class="twelve column text-center">
+                    <h2>Our Happy Clients</h2>
+                </div>
+                
+                <div class="twelve column">                    	
+                    <div class="list_carousel responsive">
+                        <ul id="testi-carousel">
+                            <li>
+                                <div class="testi-image">
+                                    <img src="images/sample_images/team8.jpg" alt="" />                                                                      
+                                </div>
+                                <div class="testi-text">
+                                    <blockquote>
+                                        <p>I searched all over and looked at many different company websites to decide which one to use and yours was by far the best. The designs are amazing.</p>
+                                    </blockquote>                                                         
+                                </div>
+                                <div class="testi-name">Joshua Torbert &ndash; Pro Garden Inc</div>                        
+                            </li>
+                            <li>
+                                <div class="testi-image">
+                                    <img src="images/sample_images/team7.jpg" alt="" />                                                                      
+                                </div>
+                                <div class="testi-text">
+                                    <blockquote>
+                                        <p>Having worked with Flux Agency for a number of years now. They are constantly moving with the times and taking us with them, You can only admire that.</p>
+                                    </blockquote>                                                         
+                                </div>
+                                <div class="testi-name">Arthur Gaines &ndash; AccurateFinder</div>                   
+                            </li>
+                            <li>
+                                <div class="testi-image">
+                                    <img src="images/sample_images/team6.jpg" alt="" />                                                                      
+                                </div>
+                                <div class="testi-text">
+                                    <blockquote>
+                                        <p>What a great organisation you are!!! That just has to be the fastest support reply I have ever experienced. I am a happy bunny again. Thank you so much.</p>
+                                    </blockquote>                                                         
+                                </div>
+                                <div class="testi-name">Deborah Hollins &ndash; 4Leaf Clover Inc</div>                        
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div id="pager-carousel" class="pager"></div>
+                    </div>	                                       
+                </div>      
+            </div>   
+        </section>
+        <!-- featured column section end here -->      
+        
+        <!-- content section start here -->
+        <section class="content-wrapper">
+        	<div class="row">                
+                <div class="six column">
+                	<h2 class="smallmargin-bottom margin-top3 margin-media">This is awesome video promotion</h2>	
+                    <p class="lead">Excepteur sint occaecat cupidatat proident sunt officia</p>
+                    <div class="slide-separator"></div>
+                    <p>At vero eos et accusamus iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia</p>
+                    <a href="#" class="button-plain small orange">Learn more <span class="plain-arrow">&gt;</span></a>
+                </div>
+                
+                <div class="six column">
+                	<div class="margin-top margin-bottom2 landing-video">
+                		<iframe src="//player.vimeo.com/video/76512663?title=0&amp;byline=0&amp;portrait=0&amp;color=afd9cd"></iframe>
+                    </div>	
+                </div>
+                
+                <div class="twelve column">
+                	<hr/>
+                </div>
+                
+                <div class="twelve column text-center">                    
+                    <ul class="block-grid-nomargin four-up list-fact">
+                        <li>
+                        	<div class="no-border icon-center">
+                                <i class="icon-groups-friends"></i>
+                            </div>
+                            <h1>8,100+</h1>
+                            <p>Subscribers</p>
+                        </li>
+                        
+                        <li>
+                        	<div class="no-border icon-center">
+                                <i class="icon-globe"></i>
+                            </div>
+                            <h1>3,480+</h1>
+                            <p>Site Views</p>
+                        </li>
+                        
+                        <li>
+                        	<div class="no-border icon-center">
+                                <i class="icon-stocks"></i>
+                            </div>
+                            <h1>7,850+</h1>
+                            <p>Sales</p>
+                        </li>
+                        
+                        <li>
+                        	<div class="no-border icon-center">
+                                <i class="icon-download-alt"></i>
+                            </div>
+                            <h1>5,600+</h1>
+                            <p>Downloads</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- content section end here -->
+        
+        <!-- bottom content start here -->
+        <section id="bottom-content-subscribe">    
+            <div class="row">
+                <div class="six column text-right">        
+                	<h5 class="inherit">Don't miss out! Sign up to be notified when we launch.*</h5>             
+                </div>
+                
+                <div class="six column">
+                	<form action="#" id="newletterform"> 
+                        <fieldset>                       
+                        <input type="email" name="email" class="textfield" id="email" value="Enter your Email" onblur="if (this.value == ''){this.value = 'Enter your Email'; }" onfocus="if (this.value == 'Enter your Email') {this.value = ''; }" />                
+                        <button type="submit" name="submit" class="buttoncontact" id="buttonsend">Subscribe</button>
+                        <div class="clear"></div>
+                        </fieldset> 
+                    </form>
+                </div>	        
+            </div>        
+        </section>
+        <!-- bottom content end here -->    
+        
+        <!-- footer start here -->
+        <footer>            
+            <div class="row">
+                <div class="six column">
+                	<div class="footer-logo">
+                    	<img src="images/logo.png" alt="main-logo" class="retina"/>
+                    </div>
+                    <p class="copyright">&copy; 2013 Ligthning Inc. Made in Cikeas - Bogor.</p>
+                    <ul class="social-list circle-social float-left">
+                        <li><a href="#"><i class="social-facebook"></i></a></li>
+                        <li><a href="#"><i class="social-twitter"></i></a></li>
+                        <li><a href="#"><i class="social-dribbble"></i></a></li>
+                        <li><a href="#"><i class="social-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="two column mobile-five">
+                    <h4 class="inherit">Overview</h4>
+                    <ul class="no-bullet">
+                        <li><a href="#">Try</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="two column mobile-five">
+                    <h4 class="inherit">Developers</h4>
+                    <ul class="no-bullet">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Wordpress</a></li>
+                        <li><a href="#">Drupal</a></li>
+                        <li><a href="#">Joomla</a></li>
+                    </ul>
+                </div>
+                <div class="two column mobile-five">
+                    <h4 class="inherit">Lightning</h4>
+                    <ul class="no-bullet">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Publisher Terms</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>	           
+            </div>        
+        </footer>
+        <!-- footer end here -->
+    </div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>

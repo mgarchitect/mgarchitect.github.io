@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Lightning - Multipurpose HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/revolution.css" media="screen"/>
+<link rel="stylesheet" href="css/media-slideshow.css" media="screen"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic,700italic"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rationale"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.li-scroller.1.0.js"></script>
+<script src="js/jquery.simpleWeather-2.3.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.donutchart.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/accordion-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script src="js/jquery.retina.js"></script>
+<script>
+$(document).ready(function() {
+//Retina Image
+$('img.retina').retina('@2x');
+
+//Slideshow
+$('.banner-magazine').revolution({
+delay:9000,
+startwidth:708,
+startheight:450,
+hideThumbs:0,
+navigationType:"none",					// bullet, thumb, none
+navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+navigationStyle:"navbar",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+navigationHAlign:"center",				// Vertical Align top,center,bottom
+navigationVAlign:"bottom",				// Horizontal Align left,center,right
+navigationHOffset:0,
+navigationVOffset:0,
+soloArrowLeftHalign:"left",
+soloArrowLeftValign:"top",
+soloArrowLeftHOffset:624,
+soloArrowLeftVOffset:507,
+soloArrowRightHalign:"right",
+soloArrowRightValign:"top",
+soloArrowRightHOffset:50,
+soloArrowRightVOffset:507,
+touchenabled:"on",						// Enable Swipe Function : on/off
+onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
+stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+})
+
+});
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+	<div id="box-wrapper">
+        <!-- header start here -->
+        <header>
+                
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column">
+                    	<ul id="submenu">
+                        	<li><a href="#">Blog</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Advertisement</a></li>
+                        </ul>                       
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->
+            
+            <div class="row">
+                <div class="twelve column">
+                
+                    <div id="left-header">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="main-logo" class="retina"/></a>
+                        </div>           
+                        <!-- logo end here -->
+                    </div>
+                    
+                    <div id="right-header">
+                        <div id="mainmenu-wrapper">
+                            <div class="left-menu">
+                                    
+                                <!-- navigation start here -->
+                                <nav id="mainmenu">
+                                    <ul id="menu">
+                                        <li class="dropdown selected"><a href="index.html">Home</a>
+                                            <ul> 
+                                                <li class="selected"><a href="index-magazine.html">home magazine</a></li>
+                                                <li><a href="index-portfolio.html">home portfolio</a></li>
+                                                <li><a href="index-landing.html">home landing</a></li>
+                                                <li><a href="index-blog.html">home bloging</a></li>
+                                                <li><a href="index-store.html">home store</a></li>
+                                            </ul>
+                                        </li>                                  
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">Politics</a></li>
+                                        <li><a href="#">Technology</a></li>
+                                        <li><a href="#">Entertainment</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- navigation end here --> 
+                                    
+                            </div>
+                            
+                            <div class="right-menu" id="top-search">
+                                <a class="trigger" href="#"><i class="icon-search"></i></a>
+                                <div class="search-panel">
+                                    <ul>
+                                        <li>
+                                        <form id="search" action="#" method="get">
+                                            <fieldset class="search-fieldset">
+                                                <input type="text" id="search-form" value="type and hit enter" onblur="if (this.value == ''){this.value = 'type and hit enter'; }" onfocus="if (this.value == 'type and hit enter') {this.value = ''; }" />
+                                            </fieldset>      						
+                                        </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                  
+                            
+                        </div>
+                    </div>
+                
+                </div>
+            </div>         
+                    
+        </header>
+        <!-- header end here -->    
+          
+        <!-- content section start here -->
+        <section class="content-wrapper magazine-wrap">    	
+        	<div class="row">            	
+                <div class="eight column">
+                	<div class="breaking-news">
+                    	<h4>Breaking News</h4>
+                            <ul id="newsticker">
+                                <li><span>October 28, 2013</span><a href="#">Did 'White Widow' spy on Kenya mall?</a></li>
+                                <li><span>October 26, 2013</span><a href="#">Report: Former drone operator shares his inner torment</a></li>
+                                <li><span>October 23, 2013</span><a href="#">'Blackfish' sparks debate over taking kids to animal parks</a></li>
+                                <li><span>October 22, 2013</span><a href="#">F1: Uncertain future for Indian Grand Prix</a></li>
+                                <li><span>October 20, 2013</span><a href="#">Tech CEO Eva Chen dares staff to fail</a></li>
+                                <li><span>October 18, 2013</span><a href="#">What to expect from Tuesday's Apple event</a></li>
+                                <li><span>October 15, 2013</span><a href="#">World's largest Legoland Water Park opens</a></li>
+                            </ul>
+                    </div>
+                              
+                	<div class="banner-magazine">           
+                        <ul>      
+                            <!-- slide 1 -->
+                            <li data-transition="fade">
+                                <img src="images/slideshow/sld_magazine1.jpg" alt="">              
+                                <div class="caption general_caption magazine-style fade" data-x="0" data-y="350" data-speed="900" data-start="550" data-easing="easeOutBack" data-endeasing="easeInBack">
+                                    <p>Technology  |  Oct 30, 2013</p>
+                                    <h4><a href="#">The New iPad Is Out. What Now, Everybody Else?</a></h4>
+                                </div>
+                            </li>  
+                                                  
+                            <!-- slide 2 -->
+                            <li data-transition="fade">
+                                <img src="images/slideshow/sld_magazine2.jpg" alt="">              
+                                <div class="caption general_caption magazine-style fade" data-x="0" data-y="350" data-speed="900" data-start="550" data-easing="easeOutBack" data-endeasing="easeInBack">
+                                    <p>Business  |  Oct 27, 2013</p>
+                                    <h4><a href="#">Walmart and Protestors Clash Over Wages</a></h4>
+                                </div>
+                            </li>
+                                               
+                            <!-- slide 3 -->
+                            <li data-transition="fade">
+                                <img src="images/slideshow/sld_magazine3.jpg" alt="">              
+                                <div class="caption general_caption magazine-style fade" data-x="0" data-y="350" data-speed="900" data-start="550" data-easing="easeOutBack" data-endeasing="easeInBack">
+                                    <p>Health  |  Oct 26, 2013</p>
+                                    <h4><a href="#">Report: Air Pollution Causes Cancer</a></h4>
+                                </div>
+                            </li>   
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom"></div>
+                    </div>
+                    
+                    <div class="ads-wrapper2">
+                    	<a href="#"><img src="images/sample_images/banner_size2.gif" alt="" /></a>
+                    </div>           	
+                    
+                    <div class="row">
+                    	<div class="six column mobile-two">
+                        	<h4 class="smallmargin-bottom2"><span class="highlight">Politic</span></h4>
+                            <article>                    
+                                <img src="images/sample_images/magazine/img_mag11.jpg" alt=""/>
+                                <ul class="no-bullet post-info">
+                                    <li><i class="icon-clockalt-timealt"></i><span>Oct 29, 2013</span></li>
+                                    <li><i class="icon-comment"></i><span><a href="#">4 Comments</a></span></li>
+                                    <li><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+                                </ul>
+                                <h5><a href="#">2016 Watch: Chris Christie Won't Commit to Full Term in New Jersey</a></h5>
+                                                    
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia<span class="punctuation">...</span></p>                     
+                                <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                            </article>
+                            
+                            <ul class="block-grid one-up news-child">
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag7.jpg" alt=""/>                      
+                                    <p class="popular-title"><a href="#">It's Official! James Comey Installed as New FBI Director</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag8.jpg" alt=""/>                                           
+                                    <p class="popular-title"><a href="#">Dick Cheney Calls Snowden a 'Traitor,' Defends NSA</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                            </ul>
+                            
+                            <h4 class="smallmargin-bottom2"><span class="highlight">Travel</span></h4>
+                            <article>                    
+                                <img src="images/sample_images/magazine/img_mag1.jpg" alt=""/>
+                                <ul class="no-bullet post-info">
+                                    <li><i class="icon-clockalt-timealt"></i><span>Oct 29, 2013</span></li>
+                                    <li><i class="icon-comment"></i><span><a href="#">4 Comments</a></span></li>
+                                    <li><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i><i class="icon-star-empty"></i></li>
+                                </ul>
+                                <h5><a href="#">2016 Watch: Chris Christie Won't Commit to Full Term in New Jersey</a></h5>
+                                                    
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia<span class="punctuation">...</span></p>                     
+                                <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                            </article>
+                            
+                            <ul class="block-grid one-up news-child">
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag7.jpg" alt=""/>                      
+                                    <p class="popular-title"><a href="#">It's Official! James Comey Installed as New FBI Director</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag8.jpg" alt=""/>                                           
+                                    <p class="popular-title"><a href="#">Dick Cheney Calls Snowden a 'Traitor,' Defends NSA</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="six column mobile-two">
+                        	<h4 class="smallmargin-bottom2"><span class="highlight">Technology</span></h4>
+                            <article>                          
+                                <div class="blog-media3">           
+                                    <img src="images/sample_images/magazine/img_mag2.jpg" alt=""/>
+                                </div>
+                                <ul class="no-bullet post-info">
+                                    <li><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></li>
+                                    <li><i class="icon-comment"></i><span><a href="#">8 Comments</a></span></li>
+                                    <li><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></li>
+                                </ul>
+                                <h5><a href="#">One Stat that Explains Why Instagram Is Adding Ads</a></h5>
+                                                    
+                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia<span class="punctuation">...</span></p>                     
+                                <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                            </article>
+                            
+                            <ul class="block-grid one-up news-child">
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag9.jpg" alt=""/>                                        
+                                    <p class="popular-title"><a href="#">The Original Surface Pro Gets a $200 Discount: Do Not Buy</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag10.jpg" alt=""/>                                          
+                                    <p class="popular-title"><a href="#">4 Reasons Why You Should Pick Apple iOS over Android</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                            </ul>
+                            
+                            <h4 class="smallmargin-bottom2"><span class="highlight">Entertainment</span></h4>
+                            <article>                          
+                                <div class="blog-media3">           
+                                    <img src="images/sample_images/magazine/img_mag12.jpg" alt=""/>
+                                </div>
+                                <ul class="no-bullet post-info">
+                                    <li><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></li>
+                                    <li><i class="icon-comment"></i><span><a href="#">8 Comments</a></span></li>
+                                    <li><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></li>
+                                </ul>
+                                <h5><a href="#">One Stat that Explains Why Instagram Is Adding Ads</a></h5>
+                                                    
+                                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt culpa qui officia<span class="punctuation">...</span></p>                     
+                                <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                            </article>
+                            
+                            <ul class="block-grid one-up news-child">
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag9.jpg" alt=""/>                                        
+                                    <p class="popular-title"><a href="#">The Original Surface Pro Gets a $200 Discount: Do Not Buy</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                                
+                                <li>
+                                    <img src="images/sample_images/magazine/img_mag10.jpg" alt=""/>                                          
+                                    <p class="popular-title"><a href="#">4 Reasons Why You Should Pick Apple iOS over Android</a></p>            
+                                    <p class="popular-date"><i class="icon-clockalt-timealt"></i><span>Oct 24, 2013</span></p>
+                                    <a href="#" class="button-more">Read More<i class="icon-enter"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="video-news">
+                        <h4><span class="highlight">Video News</span></h4>
+                        <ul class="block-grid-nomargin three-up videolist">
+                            <li class="caption-style2">                            	                                      
+                                <div class="video-title">
+                                    <a href="#">A handful of Myanmar</a>
+                                </div>
+                                <figure>
+                                    <img src="images/sample_images/video_preview1.jpg" alt="" />
+                                    <figcaption>
+                                        <a class="videoprev fancybox" href="http://vimeo.com/video/80053567" title="A handful of Myanmar"><i class="icon-circleplayempty"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li class="caption-style2">
+                            	<div class="video-title">
+                                    <a href="#">Help-Portrait.</a>
+                                </div>
+                                <figure>
+                                    <img src="images/sample_images/video_preview2.jpg" alt="" />
+                                    <figcaption>
+                                        <a class="videoprev fancybox" href="http://vimeo.com/video/21253329" title="Help-Portrait. End of the Earth"><i class="icon-circleplayempty"></i></a>
+                                    </figcaption>
+                                </figure>                       
+                            </li>
+                            
+                            <li class="caption-style2">
+                            	<div class="video-title">
+                                    <a href="#">Baby Alpaca - Wild Child</a>
+                                </div>
+                                <figure>
+                                    <img src="images/sample_images/video_preview3.jpg" alt="" />
+                                    <figcaption>
+                                        <a class="videoprev fancybox" href="http://vimeo.com/video/79866135" title="Baby Alpaca - Wild Child"><i class="icon-circleplayempty"></i></a>
+                                    </figcaption>
+                                </figure>
+                            </li>                    
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="four column">
+                	<aside>
+                    	<div id="weather"></div>
+                    </aside>
+                    
+                    <aside>
+                        <h4><span class="highlight">Connect With Us</span></h4>                        
+                        <ul class="social-list square-social">
+                            <li class="facebook-color"><a href="#"><i class="social-facebook"></i></a></li>
+                            <li class="twitter-color"><a href="#"><i class="social-twitter"></i></a></li>                    
+                            <li class="dribbble-color"><a href="#"><i class="social-dribbble"></i></a></li>
+                            <li class="linkedin-color"><a href="#"><i class="social-linkedin"></i></a></li>
+                            <li class="googleplus-color"><a href="#"><i class="social-googleplus"></i></a></li>
+                            <li class="vimeo-color"><a href="#"><i class="social-vimeo"></i></a></li>
+                            <li class="pinterest-color"><a href="#"><i class="social-pinterest"></i></a></li>
+                            <li class="flickr-color"><a href="#"><i class="social-flickr"></i></a></li>
+                            <li class="soundcloud-color"><a href="#"><i class="social-soundcloud"></i></a></li>                    
+                            <li class="instagram-color"><a href="#"><i class="social-instagram"></i></a></li>
+                            <li class="youtube-color"><a href="#"><i class="icon-youtube"></i></a></li>
+                            <li class="rss-color"><a href="#"><i class="social-rss"></i></a></li>               
+                        </ul>
+                    </aside>
+                    
+                    <aside>
+                        <ul class="tabs">
+                            <li><a href="#tab-sample1">Popular</a></li>
+                            <li><a href="#tab-sample2">Top Rated</a></li>
+                            <li><a href="#tab-sample3">Comments</a></li>                 
+                        </ul>
+                        <div class="tab_container">
+                            <div id="tab-sample1" class="tab_content">                            
+                                <ul class="popular-list">
+                                    <li>
+                                        <img src="images/sample_images/magazine/img_mag4.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">Here's Another Chance to Buy Google Glass</a></p> 
+                                        <p class="popular-comment"><i class="icon-comment"></i><span>15 Comments</span></p>      
+                                    </li>
+                                    <li>
+           								<img src="images/sample_images/magazine/img_mag6.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">Weight Loss Apps: Don't Waste Your Money</a></p> 
+                                        <p class="popular-comment"><i class="icon-comment"></i><span>11 Comments</span></p>
+                                    </li>
+                                    <li>
+                                        <img src="images/sample_images/magazine/img_mag3.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">Chris Brown Arrested Outside D.C. Hotel</a></p> 
+                                        <p class="popular-comment"><i class="icon-comment"></i><span>7 Comments</span></p>
+                                    </li>                     
+                                </ul>                                  
+                            </div>
+                                                                
+                            <div id="tab-sample2" class="tab_content">                            
+                                <ul class="popular-list">
+                                    <li>
+                                        <img src="images/sample_images/magazine/img_mag10.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">4 Reasons Why You Should Pick Apple iOS over Android</a></p> 
+                                        <p class="popular-rating"><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></p>      
+                                    </li>
+                                    <li>
+           								<img src="images/sample_images/magazine/img_mag5.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">Heinz Is No Longer McDonald's Main Squeeze</a></p>  
+                                        <p class="popular-rating"><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></p>
+                                    </li>
+                                    <li>
+                                        <img src="images/sample_images/magazine/img_mag9.jpg" alt=""/>                                          
+                                        <p class="popular-title"><a href="#">The Original Surface Pro Gets a $200 Discount: Do Not Buy</a></p>  
+                                        <p class="popular-rating"><i class="iconstar"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-empty"></i></p>
+                                    </li>                     
+                                </ul>                                        
+                            </div>
+                                                                
+                            <div id="tab-sample3" class="tab_content">                            
+                                <ul class="popular-list">
+                                    <li>
+                                        <img src="images/sample_images/author.jpg" alt="" />                                          
+                                        <p class="popular-title"><a href="#">Excepteur sint occaecat cupidatat non proident sunt in culpa <span class="punctuation">...</span></a></p> 
+                                        <p class="popular-comment"><i class="icon-user"></i><span>Johan Prakoso</span></p>      
+                                    </li>
+                                    <li>
+           								<img src="images/sample_images/author.jpg" alt="" />                                          
+                                        <p class="popular-title"><a href="#">Numquam eius modi tempora incidunt ut labore et dolore <span class="punctuation">...</span></a></p> 
+                                        <p class="popular-comment"><i class="icon-user"></i><span>Andy Guilherm</span></p>
+                                    </li>
+                                    <li>
+                                        <img src="images/sample_images/author.jpg" alt="" />                                          
+                                        <p class="popular-title"><a href="#">Molestias excepturi sint occaecati cupiditate provident <span class="punctuation">...</span></a></p> 
+                                        <p class="popular-comment"><i class="icon-user"></i><span>Wanda Rodiah</span></p>
+                                    </li>                     
+                                </ul>                                     
+                            </div>                                                                  
+                        </div>
+                    </aside>
+                    
+                    <aside>
+                        <h4><span class="highlight">About Lightning</span></h4>                        
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt. </p>
+                    </aside>
+                    
+                    <aside>
+                    	<div class="fb-wrapper text-center">
+                        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fenvato&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"></iframe>
+                        </div>
+                    </aside>
+                    
+                    <aside>
+                        <h4><span class="highlight">Photo Stream</span></h4>                        
+                        <ul id="flck-thumb" class="thumbs"><li class="no-image"></li></ul>
+                    </aside>
+                    
+                    <aside>
+                        <div class="ads-wrapper text-center">
+                            <small>Advertisement</small>
+                            <ul class="no-bullet banner-list2">
+                                <li><a href="#"><img src="images/sample_images/banner_size3.gif" alt=""/></a></li>                                
+                            </ul>
+                        </div>
+                    </aside>
+                    
+                    <aside>
+                    	<div class="newsletter-box">
+                        	<h6>Keep update with Ligthning </h6>
+                            <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores molestias</p>
+                            <form action="#" id="newletterform"> 
+                                <fieldset>                     
+                                <input type="email" name="email" class="textfield" id="email" value="Enter your Email" onblur="if (this.value == ''){this.value = 'Enter your Email'; }" onfocus="if (this.value == 'Enter your Email') {this.value = ''; }" />                                <button type="submit" name="submit" class="buttoncontact" id="buttonsend">Subscribe</button>
+                                <div class="clear"></div>
+                                </fieldset> 
+                            </form>
+                        </div>
+                    </aside>
+                </div>                
+            </div>    	                 
+        </section>
+        <!-- content section end here -->        
+        
+        <!-- footer start here -->
+        <footer>      
+            <div class="row">
+                <div class="four column">
+                    <h2>We spread <br/>the knowledge</h2>
+                    <p>Driven by the passion to create digital solutions, heading towards an increasingly mobile world!</p>
+                    <p>&copy; 2013 by Indonez. All Rights Reserved.</p>
+                </div>
+                
+                <div class="four column">
+                    <h4>Twitter Feed</h4>
+                    <!-- Begin of Twitter -->
+                    <ul id="twitter"></ul>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function($){
+                        $.getJSON('twitter.php?url='+encodeURIComponent('statuses/user_timeline.json?screen_name=Indoneztheme&count=3'), function(tweets){
+                            $("#twitter").html(tz_format_twitter(tweets));
+                        }); });
+                    </script>
+                    <!-- End of Twitter -->
+                </div>
+                
+                <div class="four column">
+                	<h4>Tag Cloud</h4>
+                    <div class="tag-cloud">                        
+                        <a href="#">Indonesia</a>
+                        <a href="#">jQuery</a>
+                        <a href="#">Design</a>
+                        <a href="#">Responsive</a>
+                        <a href="#">Themeforest</a>
+                        <a href="#">Clean</a>
+                        <a href="#">Minimalist</a>
+                        <a href="#">Modern</a>                         
+                        <a href="#">CSS 3</a>
+                        <a href="#">Cool Slider</a>
+                        <a href="#">Corporate</a>
+                        <a href="#">HTML 5</a>
+                        <a href="#">Magazine</a>
+                        <a href="#">Attractive</a>
+                        <a href="#">News</a>
+                        <a href="#">Technology</a>                                         
+                    </div>
+                </div>
+            </div>        
+        </footer>
+        <!-- footer end here -->
+	</div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>
