@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Lightning - Multipurpose HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/revolution.css" media="screen"/>
+<link rel="stylesheet" href="css/media-slideshow.css" media="screen"/>
+<link rel="stylesheet" href="css/noscript.css" media="screen,all" id="noscript"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic,700italic"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rationale"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="js/gmaps.js"></script>
+<script src="js/contact-form.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/masonry.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/jquery.li-scroller.1.0.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.donutchart.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/accordion-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script src="js/jquery.retina.js"></script>
+<script>
+$(document).ready(function() {
+//Retina Image
+$('img.retina').retina('@2x');
+
+//Map Jquery
+var map = new GMaps({
+    el: '#map',
+	scrollwheel: false,
+    lat: 25.64786,
+    lng: -100.33504,
+    zoom: 14,
+	zoomControl : true,
+    zoomControlOpt: {
+        style : 'SMALL',
+        position: 'TOP_LEFT'
+    },
+    panControl : false,
+	streetViewControl : false,
+	mapTypeControl: false,
+	overviewMapControl: false 
+  });
+
+    map.addMarker({
+    lat: 25.64786,
+    lng: -100.33504,
+      icon: "images/map-marker.png"
+    });
+
+  var styles = [
+     {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+      ]
+    }, {
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+            { visibility: "off" }
+      ]
+    }
+  ];
+        
+  map.addStyle({
+      styledMapName:"Styled Map",
+      styles: styles,
+      mapTypeId: "map_style"  
+  });
+  
+  map.setStyle("map_style");
+});
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+	<div id="box-wrapper">
+        <!-- header start here -->
+        <header>
+                
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column top-desc">
+                        <ul>
+                            <li class="tablet-hide"><i class="icon-checkin"></i><span>Piso 22, Torre Insignia, Av. María Izquierdo,San Pedro Garza García, N.L.</span></li>
+                            <li><i class="icon-phonealt"></i><span>(81) 86-50-89-35</span></li>
+                            <li class="mobile-hide"><i class="icon-envelope"></i><span>contacto@mgarchitect.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->
+            
+            <div class="row">
+                <div class="twelve column">
+                
+                    <div id="left-header">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="main-logo" class="retina"/></a>
+                        </div>           
+                        <!-- logo end here -->
+                    </div>
+                    
+                    <div id="right-header">
+                        <div id="mainmenu-wrapper">
+                            <div class="left-menu">
+                                    
+                                <!-- navigation start here -->
+                                <nav id="mainmenu">
+                                    <ul id="menu">
+                                        <li class="dropdown selected"><a href="index.html">Inicio</a>
+                                        </li> 
+                                        </li>                               
+                                        <li class="dropdown"><a href="#">Paginas</a>
+                                            <ul> 
+                                                <li><a href="about.html">Acerca de nosotros</a></li>
+                                                <li><a href="team.html">Nuestro Equipo</a></li>
+                                            </ul>
+                                        </li>                                        
+                                        <li class="dropdown"><a href="portfolio-2col.html">Portafolio</a>
+                                        </li>
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="contact.html">Contacto</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- navigation end here --> 
+                                    
+                            </div>
+                            
+                            <div class="right-menu" id="top-search">
+                                <a class="trigger" href="#"><i class="icon-search"></i></a>
+                                <div class="search-panel">
+                                    <ul>
+                                        <li>
+                                        <form id="search" action="#" method="get">
+                                            <fieldset class="search-fieldset">
+                                                <input type="text" id="search-form" value="type and hit enter" onblur="if (this.value == ''){this.value = 'type and hit enter'; }" onfocus="if (this.value == 'type and hit enter') {this.value = ''; }" />
+                                            </fieldset>      						
+                                        </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                  
+                            
+                        </div>
+                        
+                        <!-- pagetitle start here -->
+                        <div id="slogan-wrapper" class="pagetitle">
+                        	<h1 class="smallmargin-bottom inherit">Hablemos de negocios, contactenos!</h1>
+                            <hr/>                          
+                        </div>
+                        <div class="breadcrumb">
+                            <ul>
+                                <li><a href="index.html"><i class="icon-home"></i></a></li>
+                                <li class="current-page"><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <!-- pagetitle end here -->
+                        
+                    </div>
+                
+                </div>
+            </div>    
+                    
+        </header>
+        <!-- header end here -->
+          
+        <!-- content section start here -->
+        <section class="content-wrapper">    	
+            <div class="row">
+            	<div class="twelve column">
+                	<div id="map"></div>
+                </div>
+            
+                <div class="four column">    
+                    <h3 class="inherit">Nuestra Oficina</h3>
+                    <ul class="no-bullet list-line2">
+                        <li>
+                            <div class="no-border small icon-left">                           
+                                <i class="icon-time"></i>
+                            </div>
+                            <p class="text-overflow"><strong>Horarios de Oficina</strong><br/>Lunes a Domingo / 7:00 - 18:00<br/>Sabados / 9:00 - 15:00</p>                        
+                        </li>
+                        <li>
+                            <div class="no-border small icon-left">                           
+                                <i class="icon-map"></i>
+                            </div>
+                            <p class="text-overflow"><strong>Infromacion de Contacto</strong><br/>PISO 22, TORRE INSIGNIA<br/>AV. MARÍA IZQUIERDO,SAN PEDRO GARZA GARCÍA, N.L. </p>                        
+                        </li>                        
+                        <li>
+                            <div class="no-border small icon-left">                           
+                                <i class="icon-phonebook"></i>
+                            </div>
+                            <p class="text-overflow"><strong>Telefono &amp; Fax</strong><br/>Telefono : (81) 86-50-89-35  <br/>Fax : (81) 86-50-89-37 </p>                        
+                        </li>
+                    </ul>                             
+                </div>
+                
+                <div class="eight column">
+                    <p class="lead">Para cualquier duda sobre nuestros servicios, no dude en escribir.</p>
+                    <p>Por favor proporcione los siguientes datos para ponernos en contacto con usted a la brevedad.</p>
+                                
+                    <div id="contact-form-area">
+                        <!-- Contact Form Start //-->
+                        <form action="#" id="contactform"> 
+                            <fieldset> 
+                            <label>Nombre <em>*</em></label>                           
+                            <input type="text" name="name" class="textfield" id="name" value="" /> 
+                            <label>E-mail <em>*</em></label> 
+                            <input type="email" name="email" class="textfield" id="email" value="" />                        
+                            <label>Asunto <em>*</em></label>
+                            <input type="text" name="subject" class="textfield" id="subject" value="" />
+                            <label>Mensaje <em>*</em></label>
+                            <textarea name="message" id="message" class="textarea" cols="2" rows="6"></textarea>
+                            <div class="clear"></div> 
+                            <label>&nbsp;</label>
+                            <button type="submit" name="submit" class="buttoncontact" id="buttonsend">Enviar</button>
+                            <span class="loading" style="display: none;">Por favor espere..</span>
+                            <div class="clear"></div>
+                            </fieldset> 
+                        </form>
+                        <!-- Contact Form End //-->
+                    </div>	
+                </div>     
+            </div>            	                 
+        </section>
+        <!-- content section end here -->         
+        
+        <!-- footer start here -->
+        <footer>      
+            <div class="row">
+                <div class="eight column">
+                	<ul class="no-bullet footer-list smallmargin-top2">
+                    	<li><a href="#">Inicio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Terminos</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Prensa</a></li>
+                        <li class="link-box"><a href="#"><i class="icon-postalt"></i>Soporte</a></li>
+                    </ul>
+                    <p>&copy; 2016 mgarchitect. Todos los derechos resevador. Tema por Michelle Tamez Perez.</p>                    
+                </div>
+                
+                <div class="four column">
+                	<ul class="social-list circle-social">
+                        <li><a href="#"><i class="social-facebook"></i></a></li>
+                        <li><a href="#"><i class="social-twitter"></i></a></li>
+                        <li><a href="#"><i class="social-dribbble"></i></a></li>
+                        <li><a href="#"><i class="social-linkedin"></i></a></li>
+                    </ul>    
+                </div>
+            </div>        
+        </footer>
+        <!-- footer end here -->
+    </div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>

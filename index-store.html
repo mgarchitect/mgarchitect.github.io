@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Lightning - Multipurpose HTML Template</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //     Retina Bookmark Icon     // -->
+<!-- ////////////////////////////////// -->
+<link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Stylesheets Files       // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/media.css"/>
+<link rel="stylesheet" href="css/revolution.css" media="screen"/>
+<link rel="stylesheet" href="css/media-slideshow.css" media="screen"/>
+
+
+
+<!-- ////////////////////////////////// -->
+<!-- //     Google Webfont Files     // -->
+<!-- ////////////////////////////////// -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,300italic,400italic,700italic"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rationale"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //        Favicon Files         // -->
+<!-- ////////////////////////////////// -->
+<link rel="shortcut icon" href="images/favicon.ico"/>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/jquery.easing-1.3.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/jquery.li-scroller.1.0.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/mediaelement-and-player.min.js"></script>
+<script src="js/jquery.fancybox.js?v=2.0.6"></script>
+<script src="js/jquery.fancybox-media.js?v=1.0.3"></script>
+<script src="js/jquery.donutchart.js"></script>
+<script src="js/jflickrfeed.min.js"></script>
+<script src="js/jquery.twitter.js"></script>
+<script src="js/accordion-functions.js" ></script>
+<script src="js/theme-functions.js"></script>
+<script src="js/jquery.retina.js"></script>
+<script>
+$(document).ready(function() {
+//Retina Image
+$('img.retina').retina('@2x');
+
+//Slideshow
+$('.banner-landing').revolution({
+delay:9000,
+startwidth:1040,
+startheight:463,
+hideThumbs:0,
+navigationType:"none",					// bullet, thumb, none
+navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+navigationStyle:"navbar",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+navigationHAlign:"center",				// Vertical Align top,center,bottom
+navigationVAlign:"bottom",				// Horizontal Align left,center,right
+navigationHOffset:0,
+navigationVOffset:0,
+soloArrowLeftHalign:"left",
+soloArrowLeftValign:"center",
+soloArrowLeftHOffset:1060,
+soloArrowLeftVOffset:259,
+soloArrowRightHalign:"right",
+soloArrowRightValign:"center",
+soloArrowRightHOffset:70,
+soloArrowRightVOffset:259,
+touchenabled:"on",						// Enable Swipe Function : on/off
+onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
+stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+shadow:0,								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows  (No Shadow in Fullwidth Version !)
+fullWidth:"off"							// Turns On or Off the Fullwidth Image Centering in FullWidth Modus
+})
+
+});
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+	<div id="box-wrapper">
+        <!-- header start here -->
+        <header>
+                
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column top-desc top-store">
+                    	<span class="mobile-hide">Welcome guest, you can <a href="#">login</a> or <a href="#">create an account.</a></span>
+                        <a href="#"><i class="icon-shopping-cart"></i><span>Cart - 2 items - <span class="label">$120</span></span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->
+            
+            <div class="row">
+                <div class="twelve column">
+                
+                    <div id="left-header">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html"><img src="images/logo.png" alt="main-logo" class="retina"/></a>
+                        </div>           
+                        <!-- logo end here -->
+                    </div>
+                    
+                    <div id="right-header">
+                        <div id="mainmenu-wrapper">
+                            <div class="left-menu">
+                                    
+                                <!-- navigation start here -->
+                                <nav id="mainmenu">
+                                    <ul id="menu">
+                                        <li class="dropdown selected"><a href="index.html">Home</a>
+                                            <ul> 
+                                                <li><a href="index-magazine.html">home magazine</a></li>
+                                                <li><a href="index-portfolio.html">home portfolio</a></li>
+                                                <li><a href="index-landing.html">home landing</a></li>
+                                                <li><a href="index-blog.html">home bloging</a></li>
+                                                <li class="selected"><a href="index-store.html">home store</a></li>
+                                            </ul>
+                                        </li>                                
+                                        <li class="dropdown"><a href="#">Pages</a>
+                                            <ul> 
+                                                <li><a href="about.html">about us</a></li>
+                                                <li><a href="services.html">our services</a></li>
+                                                <li><a href="pricing-plan.html">pricing plan</a></li>
+                                                <li><a href="testimonials.html">client testimonials</a></li>
+                                                <li><a href="team.html">our team</a></li>
+                                                <li><a href="sitemap.html">flux sitemap</a></li>
+                                                <li><a href="faq.html">faq page</a></li>
+                                                <li><a href="404.html">404 error</a></li>
+                                            </ul>
+                                        </li>                                        
+                                        <li><a href="#">Shop</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Wishlist</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                                <!-- navigation end here --> 
+                                    
+                            </div>
+                            
+                            <div class="right-menu" id="top-search">
+                                <a class="trigger" href="#"><i class="icon-search"></i></a>
+                                <div class="search-panel">
+                                    <ul>
+                                        <li>
+                                        <form id="search" action="#" method="get">
+                                            <fieldset class="search-fieldset">
+                                                <input type="text" id="search-form" value="type and hit enter" onblur="if (this.value == ''){this.value = 'type and hit enter'; }" onfocus="if (this.value == 'type and hit enter') {this.value = ''; }" />
+                                            </fieldset>      						
+                                        </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                     
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>    
+                    
+        </header>
+        <!-- header end here -->
+        
+        <!-- slideshow start here -->
+        <section id="slideshow-container-landing">
+            <div class="banner-landing">            
+                
+                <ul>      
+                    <!-- slide 1 -->
+                    <li data-transition="fade">
+                        <img src="images/slideshow/bg_store1.png" alt="" style="background:#bec3c7">
+                        <div class="caption lfb store_media2" data-x="615" data-y="7" data-speed="1200" data-start="400" data-easing="easeOutExpo"><img src="images/slideshow/object_store1.png" alt=""></div>
+                        
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="5" data-y="210" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                        	<h1 class="big-heading3 white-color">New Collection 2013</h1>
+                        </div>                
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="7" data-y="285" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                            <h3 class="white-color">Discount up to 60%</h3>
+                        </div>
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="8" data-y="345" data-speed="900" data-start="700" data-easing="easeOutExpo">
+                        	<div class="slide-separator2"></div>
+                        </div>
+                    </li>
+                    
+                    <!-- slide 2 -->
+                    <li data-transition="fade">
+                        <img src="images/slideshow/bg_store2.png" alt="" style="background:#bec3c7">
+                        <div class="caption lfb store_media4" data-x="-90" data-y="7" data-speed="1200" data-start="400" data-easing="easeOutExpo"><img src="images/slideshow/object_store2.png" alt=""></div>
+                        
+                        <div class="caption general_caption lfb ltb store_media3"  data-x="445" data-y="210" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                        	<h1 class="big-heading3 white-color">Big Sale and Bonus</h1>
+                        </div>                
+                        <div class="caption general_caption lfb ltb store_media3"  data-x="445" data-y="285" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                            <h3 class="white-color">Discount up to 60%</h3>
+                        </div>
+                        <div class="caption general_caption lfb ltb store_media3"  data-x="445" data-y="345" data-speed="900" data-start="700" data-easing="easeOutExpo">
+                        	<div class="slide-separator2"></div>
+                        </div>
+                    </li>
+                    
+                    <!-- slide 3 -->
+                    <li data-transition="fade">
+                        <img src="images/slideshow/bg_store3.png" alt="" style="background:#bec3c7">
+                        <div class="caption lfb store_media2" data-x="580" data-y="7" data-speed="1200" data-start="400" data-easing="easeOutExpo"><img src="images/slideshow/object_store3.png" alt=""></div>
+                        
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="5" data-y="210" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                        	<h1 class="big-heading3 white-color">Elegant and Luxury</h1>
+                        </div>                
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="7" data-y="285" data-speed="900" data-start="550" data-easing="easeOutExpo">
+                            <h3 class="white-color">Discount up to 60%</h3>
+                        </div>
+                        <div class="caption general_caption lfb ltb store_media1"  data-x="8" data-y="345" data-speed="900" data-start="700" data-easing="easeOutExpo">
+                        	<div class="slide-separator2"></div>
+                        </div>
+                    </li>              
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
+                    
+            </div>   	
+        </section>
+        <!-- slideshow end here -->   
+          
+        <!-- content section start here -->
+        <section class="content-wrapper">    	
+            <div class="row">
+            	<div class="twelve column">
+                	<h2 class="text-center">Featured Product</h2>
+                    <p class="text-center smallmargin-top3">Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis</p>
+                    <div class="slide-separator center-position"></div>
+                    
+                    <ul class="block-grid four-up margin-top2 margin-bottom tablet-store">
+                        <li>
+                        	<div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item1.jpg" alt="" />  
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                <h6>Mens Blue Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>                       
+                        </li>
+                        <li>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item2.jpg" alt="" />  
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                <h6>Womens White Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item3.jpg" alt="" />
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                
+                                <h6>Mens Grey Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item4.jpg" alt="" />
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                
+                                <h6>Womens Black Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="store-sale"><h6>Sale</h6></div>
+                        	<div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item5.jpg" alt="" />  
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                <h6>Womens Brown Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>                       
+                        </li>
+                        <li>
+                        	<div class="store-sale"><h6>Sale</h6></div>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item6.jpg" alt="" />  
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                <h6>Mens Red Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="store-sale"><h6>Sale</h6></div>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item7.jpg" alt="" />
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                
+                                <h6>Womens Panther Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<div class="store-sale"><h6>Sale</h6></div>
+                            <div class="store-content caption-style2">
+                                <figure>
+                                    <img src="images/sample_images/store/item8.jpg" alt="" />
+                                    <figcaption>                               
+                                        <a href="#" class="button small white store-button-left"><i class="icon-shopping-cart"></i> Add to Chart</a>
+                                        <a href="#" class="button small white store-button-right"><i class="icon-info-sign"></i> More Info</a>
+                                    </figcaption>
+                                </figure>
+                                
+                                <h6>Mens Zebra Top</h6>                                
+                                <div class="store-price">$80</div>
+                                
+                                <div class="clear"></div>
+                            </div>
+                        </li>                        
+                    </ul>
+                    
+                    <div class="promo-box">
+                        <div class="promo-text">
+                        	<div class="no-border icon-left small">                           
+                                <i class="icon-gift"></i>
+                            </div>
+                            <h3>Free International Shipping on all Orders</h3>
+                            <p>Flux is a flat design and responsive HTML template created for business websites.</p>
+                        </div>
+                        <div class="promo-button">
+                            <a href="#"><h3>Order Now</h3><i class="icon-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="eight column margin-top">
+                	<img src="images/sample_images/img_sample3.png" alt="" class="img-left media_margintop"/>
+                	<h4>Lightning is Fully Responsive</h4>                    
+                    <p class="text-overflow">Excepteur sint occaecat cupidatat non proident sunt in culpa quilla officia deserunt mollit anim id est laborum quisquam est, qui dolorem ipsum quia dolor sit amet quod maxime placeat facere possimus inventore veritatis quasi architecto beatae vitae erro dictasun explicabo enimipsam.</p>
+                    <a href="#" class="button small orange"><i class="icon-emptycart"></i> Purchase Now</a>
+                </div>
+                <div class="four column">
+                	<div class="newsletter-box">
+                        <h6>Keep update with Ligthning </h6>
+                        <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores molestias</p>
+                        <form action="#" id="newletterform"> 
+                            <fieldset>                     
+                            <input type="email" name="email" class="textfield" id="email" value="Enter your Email" onblur="if (this.value == ''){this.value = 'Enter your Email'; }" onfocus="if (this.value == 'Enter your Email') {this.value = ''; }" />                                <button type="submit" name="submit" class="buttoncontact" id="buttonsend">Subscribe</button>
+                            <div class="clear"></div>
+                            </fieldset> 
+                        </form>
+                    </div>
+                </div>
+            </div>            	                 
+        </section>
+        <!-- content section end here -->         
+        
+        <!-- bottom content start here -->
+        <section id="bottom-content">    
+            <div class="row">
+            	<div class="three column mobile-two">        
+                	<h6 class="margin-bottom inherit"><span class="highlight">Contact Us</span></h6>  
+                    <ul class="footer-address no-bullet">
+                        <li class="address">25 Silver Avenue. Jakarta, JKT 12345.</li>
+                        <li class="phone">(621) 123 4567</li>
+                        <li class="email"><a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></li>
+                    </ul>            
+                </div>
+                <div class="three column mobile-two">        
+                	<h6 class="margin-bottom inherit"><span class="highlight">Information</span></h6>  
+                    <ul class="arrow">
+                    	<li><a href="#">About Us</a></li>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>           
+                </div>
+                <div class="three column mobile-two">        
+                	<h6 class="margin-bottom inherit"><span class="highlight">Customer Service</span></h6>  
+                    <ul class="arrow">
+                    	<li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Bookmark</a></li>
+                    </ul>             
+                </div>
+                <div class="three column mobile-two">        
+                	<h6 class="margin-bottom inherit"><span class="highlight">My Account</span></h6>  
+                    <ul class="arrow">
+                    	<li><a href="#">My Account</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                    </ul>           
+                </div>                     
+            </div>        
+        </section>
+        <!-- bottom content end here -->    
+        
+        <!-- footer start here -->
+        <footer>            
+            <div class="row">
+                <div class="six column">
+                	<div class="footer-logo">
+                    	<img src="images/logo.png" alt="main-logo" class="retina"/>
+                    </div>
+                    <p class="copyright">&copy; 2013 Ligthning Inc. Made in Cikeas - Bogor.</p>
+                </div>
+                <div class="six column">
+                    <ul class="no-bullet social-list payment-list">                    	
+                        <li><img src="images/sample_images/payment/small-paypal.png" alt="" class="retina"/></li>
+                        <li><img src="images/sample_images/payment/small-moneybookers.png" alt="" class="retina"/></li>
+                        <li><img src="images/sample_images/payment/small-visa.png" alt="" class="retina"/></li>
+                        <li><img src="images/sample_images/payment/small-mastercard.png" alt="" class="retina"/></li>
+                        <li><img src="images/sample_images/payment/small-american-express.png" alt="" class="retina"/></li>
+                        <li><img src="images/sample_images/payment/small-jcb.png" alt="" class="retina"/></li>                        
+                    </ul>
+                </div>          
+            </div>        
+        </footer>
+        <!-- footer end here -->
+    </div>
+
+<script>$('#noscript').remove();</script>
+</body>
+</html>
